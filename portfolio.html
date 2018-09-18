@@ -2,45 +2,158 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="main.js"></script>
 </head>
-
 <body>
-   
-    <div class="card-group">
-        <div class="card">
-          <h2>Chuck Towle</h2>
-          <div class="card-body">
-            <h5 class="card-title">About Me</h5>
-            <p class="card-text">I am currently attending UCSD's coding bootcamp. ect</p>
+  <div class="card-group">
+    <div class="card">
+      <h2>Chuck Towle</h2>
+      <h3>Portfolio<h3>
+      <div class="card-body">
+        <h5 class="card-title">About Me</h5>
+        <p> I am currently attending UCSD's coding bootcamp learning front-end and back-end
+          technologies.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="card-body">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  FriendFinder
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <p> FriendFinder is dating app that is a full-stack site takes in results from users' surveys, then
+                  compare their
+                  answers with those from other users then display the name and picture of the user with the best
+                  overall match. The app
+                  uses Express to handle routing.
+                </p>
+                <a href="https://chtowle.github.io/FriendFinder/" class="card-link">FriendFinder</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-         <h2>Projects</h2>
-          <div class="card-body">
-            <h5 class="card-title">list of projects</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  YouShouldTry
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <p>YouShouldTry is a group project that allows the user to provide recommendations to and to read recommendations from friends.  It is 
+                full stack application that uses Sequelize,MySQL, Nodeexpress on the back end and HTML5, CSS3, handlebars, and JavaScript on the front end.
+                </P>
+                <a href="" class="card-link">FriendFinder</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h2>Technologies</h2>
-          <div class="card-body">
-            <h5 class="card-title">list of technologies</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>   
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  LIRI-Bot
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <p>
+                LIRI is a Language Interpretation and Recognition Interface.
+                It is a command line node app that takes in parameters and gives you back data.
+                </p>
+                <a href=" https://chtowle.github.io/LIRI-Bot/" class="card-link">LIRI-Bot</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  gifmappy
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <p>Gifmappy is a project using multiple API' that provides a entertaining and dynamic results for
+                location search results
+                </p>
+                <a href="http://gifmappy.com/" class="card-link">GifMappy</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  TrainScheduler
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <p>The train schedule application incorporates Firebase to host arrival and departure data.
+                      The app will retrieve and manipulate this information with Moment.js and will provide up-to-date
+                      information about
+                      various trains, namely their arrival times and how many minutes remain until they arrive at their
+                      station.
+                      </p>
+                      <a href=" https://chtowle.github.io/Train-Scheduler/" class="card-link">TrainScheduler</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="card">
+      <h2>Technologies</h2>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">HTML5</li>
+          <li class="list-group-item">CSS3</li>
+          <li class="list-group-item">JavaScript</li>
+          <li class="list-group-item">JQuery</li>
+          <li class="list-group-item">Sequelize</li>
+          <li class="list-group-item">MySQL</li>
+          <li class="list-group-item">node express</li>
+          <li class="list-group-item">MongoDB</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
